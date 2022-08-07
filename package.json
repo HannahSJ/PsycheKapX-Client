@@ -21,6 +21,7 @@
     "react-spring": "^9.4.4",
     "react-toastify": "^8.1.0",
     "styled-components": "^5.3.5",
+    "typescript": "^3.8.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

@@ -51,7 +51,7 @@ const Footer = () => {
                         <FooterLinksItems>
                             <FooterLinksTitle>Social Media</FooterLinksTitle>
                                 <FooterLinks to="/signup">Instagram</FooterLinks>
-                                <FooterLinks to="/signup">Facebook</FooterLinks>
+                                <FooterLinks to="https://www.facebook.com/KapX-106889658678079">Facebook</FooterLinks>
                                 <FooterLinks to="/signup">Youtube</FooterLinks>
                                 <FooterLinks to="/signup">Twitter</FooterLinks>
                         </FooterLinksItems>
@@ -64,7 +64,7 @@ const Footer = () => {
                         </SocialLogo>
                             <WebsiteRights>Psyche © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                                 <SocialIcons>
-                                    <SocialIconsLink href="/" target="_blank" aria-label="Facebook"><FaFacebook /></SocialIconsLink>
+                                    <SocialIconsLink href="https://www.facebook.com/KapX-106889658678079" target="_blank" aria-label="Facebook"><FaFacebook /></SocialIconsLink>
                                     <SocialIconsLink href="/" target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconsLink>
                                     <SocialIconsLink href="/" target="_blank" aria-label="Twitter"><FaTwitter /></SocialIconsLink>
                                 </SocialIcons>

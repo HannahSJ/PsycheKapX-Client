@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import avatar from '../../images/avatar.jpeg'
+import avatar from '../../images/psyche.png'
 
 function Navigation() {
     return (
@@ -10,7 +10,7 @@ function Navigation() {
                 <div className="avatar">
                     <img src={avatar} alt=""/>
                     <div>
-                        <p>สัจจาลินี สัจจวิโส</p>
+                        <p>Satja</p>
                     </div>
                 </div>
                 <ul className="nav-items">
@@ -25,6 +25,9 @@ function Navigation() {
                     </li>
                     <li className="nav-item">
                         <NavLink to="/bookreviewe" activeClassName="active-class">หนังสือแนะนำ</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/phq9test" activeClassName="active-class">ประเมิณสุขภาพจิต</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/profile" activeClassName="active-class">Profile</NavLink>

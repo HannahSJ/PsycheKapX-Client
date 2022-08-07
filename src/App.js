@@ -5,15 +5,19 @@ import Home from './pages';
 // import SignupPage from './pages/signup';
 import UserPage from './pages/User';
 import ContentPage from './pages/Content';
-import SignupPage from './pages/Signup';
+// import SignupPage from './pages/Signup';
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path='/register' component={SignupPage} exact />
+        {/* <Route path='/register' component={SignupPage} exact /> */}
         {/* <Route path='/signup' component={SignupPage} exact /> */}
+        <Route path="/login" exact component={Login} />
+				<Route path="/register" exact component={Register} />
         <Route path='/user' component={UserPage} exact />
         <Route path='/con101' component={ContentPage} exact /> 
         <Route path='/con102' component={ContentPage} exact /> 
