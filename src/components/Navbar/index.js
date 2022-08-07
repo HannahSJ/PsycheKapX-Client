@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll';
+import { useHistory } from 'react-router-dom'
 import PopupSign from '../PopupSign';
 import {
     Nav,
@@ -15,6 +16,7 @@ import {
 } from './NavbarElement';
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
+    const history = useHistory()
 
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -38,6 +40,11 @@ const Navbar = ({ toggle }) => {
     const openModal = () => {
         setShowModal(prev => !prev)
     }
+
+    function handleClick() {
+        history.push("/user");
+    }
+    
 
     return (
         <>
@@ -86,7 +93,8 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink onClick={openModal} >เริ่มกันเลย</NavBtnLink>
+                        <NavBtnLink onClick={handleClick}>เริ่มกันเลย</NavBtnLink>
+                        {/* <NavBtnLink onClick={openModal} >เริ่มกันเลย</NavBtnLink> */}
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

@@ -1,0 +1,27 @@
+.App {
+    font-family: sans-serif;
+  }
+  
+  table {
+    border: 1px solid #121212;
+    border-spacing: 8px;
+    border-collapse: collapse;
+    margin-bottom: 34px;
+  }
+  
+  th,
+  td {
+    border-bottom: 1px solid #121212;
+    padding: 14px;
+  }
+  
+  .indicates-depression {
+    background: #cacaca;
+  }
+  
+  small {
+    font-size: 0.7em;
+  }
+  .muted {
+    opacity: 0.52;
+  }

@@ -12,14 +12,14 @@ const Profile = () => {
                     </div>
                     <WrapContainer>
                         <Wrapper>
-                            <Label htmlFor='for'>First Name</Label>
-                            <Data>สัจจาลินี</Data>
+                            <Label htmlFor='for'>Name</Label>
+                            <Data>Satja</Data>
                         </Wrapper>
                         <NavBtn>
                             <Button>Edit</Button>
                         </NavBtn>
                     </WrapContainer>
-                    <WrapContainer>
+                    {/* <WrapContainer>
                         <Wrapper>
                             <Label htmlFor='for'>Last Name</Label>
                             <Data>สัจจวิโส</Data>
@@ -27,8 +27,8 @@ const Profile = () => {
                         <NavBtn>
                             <Button>Edit</Button>
                         </NavBtn>
-                    </WrapContainer>
-                    <WrapContainer>
+                    </WrapContainer> */}
+                    {/* <WrapContainer>
                         <Wrapper>
                             <Label htmlFor='for'>Age</Label>
                             <Data>24</Data>
@@ -36,7 +36,7 @@ const Profile = () => {
                         <NavBtn>
                             <Button>Edit</Button>
                         </NavBtn>
-                    </WrapContainer>
+                    </WrapContainer> */}
                     <WrapContainer>
                         <Wrapper>
                             <Label htmlFor='for'>Email</Label>

@@ -6,6 +6,7 @@ import Article from './Article'
 import Listening from './Listening';
 import BookReview from './BookReview';
 import Profile from './Profile';
+import PHQ9Test from './PHQ9Test';
 
 
 const MainContent = () => {
@@ -31,6 +32,9 @@ const MainContent = () => {
                 </Route>
                 <Route path="/bookreviewe" exact>
                     <BookReview />
+                </Route>
+                <Route path="/phq9test" exact>
+                    <PHQ9Test />
                 </Route>
                 <Route path="/profile" exact>
                     <Profile />
