@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import PopupSign from '../PopupSign';
+import { useHistory } from 'react-router-dom'
+
 import {
     SidebarContainer,
     Icon,
@@ -19,6 +21,10 @@ const Sidebar = ({ isOpen, toggle }) => {
         setShowModal(prev => !prev)
     }
 
+    const history = useHistory()
+    function handleClick() {
+        history.push("/user");
+    }
 
     return (
         <>
@@ -34,7 +40,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         {/* <SidebarLink to='signin' onClick={toggle}>เข้าสู่ระบบ</SidebarLink> */}
                     </SidebarMenu>
                     <SideBtnWrap>
-                        <SidebarRoute to='/' onClick={openModal} >เริ่มกันเลย</SidebarRoute>
+                        <SidebarRoute to='/' onClick={handleClick} >เริ่มกันเลย</SidebarRoute>
                     </SideBtnWrap>
                 </SidebarWrapper>
             </SidebarContainer>
